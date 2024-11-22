@@ -1,13 +1,15 @@
-public class hello {
+public class StarPattern {
     public static void main(String[] args) {
-        // Declare two numbers
-        int num1 = 25;
-        int num2 = 25;
-
-        // Perform addition
-        int sum = num1 + num2;
-
-        // Display the result
-        System.out.println("The sum of " + num1 + " and " + num2 + " is: " + sum);
+        int n = 5; 
+        
+       
+        for (int i = 1; i <= n; i++) {
+            // Inner loop for printing stars in each row
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+           
+            System.out.println();
+        }
     }
 }
